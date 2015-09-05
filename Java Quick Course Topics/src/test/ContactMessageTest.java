@@ -15,27 +15,18 @@ import pageObjects.ContactResultPage;
 import pageObjects.HomePage;
 
 
-public class ContactMessageTest {
-	
-	WebDriver driver;
+public class ContactMessageTest extends AbstractWebDriverTest {
 	
 	@Before
 	public void testSetUp()
 	{
-		driver = new FirefoxDriver();
-	}
-	
-	@After
-	public void testShutDown()
-	{
-		driver.close();
+		onHomePage.navigateToWebApp();
+		System.out.println("before in test");
 	}
 	
 	@Test
 	public void shouldSendContactMessage()
 	{
-		HomePage onHomePage = new HomePage(driver);
-		onHomePage = onHomePage.navigateToWebApp();
 		ContactPage onContactPage = onHomePage.clickOnContact();
 		ContactResultPage onResultPage = onContactPage.fillFormWithData().submitForm();
 		
