@@ -1,5 +1,5 @@
 // Java JUnit WebDriver Automation Tutorial 17 Taking Screenshots-FVsz1PmCFg0.mp4
-// Date: 09-18-2015
+// Date: 09-18-2015 
 // Taking screen shot of a page
 // Screen shot files are located in: "/home/errol/SELENIUM/workspace/java-unit/WebDriverScreenShots/"
 
