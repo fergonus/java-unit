@@ -1,26 +1,23 @@
-// Java JUnit Webdriver Automation Tutorial 14 Parameter Management-xR672HmZZhk.mp4
-// Parameters Management
-// Date: 09-14-2015
+// Java JUnit Webdriver Automation Tutorial 15 Page Factory-u8XH46u1QAw.mp4
+// Date: 09-18-2015
+// Page Factory
 
-package Test;
+package test;
 
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import util.PropertyManager;
+import page.HomePage;
 
 public class AbstractTestDriver {
-	
+
 	protected WebDriver driver;
-	protected PropertyManager property;
 	
 	@Before
-	public void testSetUp()
+	public void setUp()
 	{
-		property = new PropertyManager();
-		property.generateProperty();
 		driver = new FirefoxDriver();
 	}
 	
@@ -29,5 +26,6 @@ public class AbstractTestDriver {
 	{
 		driver.quit();
 	}
-
+	
 }
+
